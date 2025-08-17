@@ -1,0 +1,266 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e6e6fa 0%, #d8bfd8 50%, #dda0dd 100%);
+    min-height: 100vh;
+    color: #4a4a4a;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.main-title {
+    font-size: 2.5rem;
+    color: #8a2be2;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    animation: heartbeat 2s ease-in-out infinite;
+}
+
+.heart {
+    display: inline-block;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #9370db;
+    font-style: italic;
+}
+
+/* Main content styles */
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.person-section {
+    perspective: 1000px;
+}
+
+.person-card {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 25px;
+    padding: 30px;
+    text-align: center;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.person-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.person-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+.person-card:hover::before {
+    transform: translateX(100%);
+}
+
+.person-avatar {
+    margin-bottom: 25px;
+}
+
+.person-name {
+    font-size: 2rem;
+    color: #8a2be2;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-placeholder {
+    font-size: 4rem;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #e6e6fa, #dda0dd);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styles */
+.button-group {
+    margin-bottom: 25px;
+}
+
+.action-btn {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.kiss-btn {
+    background: linear-gradient(135deg, #ff69b4, #ff1493);
+    color: white;
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+}
+
+.kiss-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 105, 180, 0.6);
+}
+
+.god-btn {
+    background: linear-gradient(135deg, #ffd700, #ffa500);
+    color: white;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+}
+
+.god-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.6);
+}
+
+.action-btn:active {
+    transform: translateY(0);
+}
+
+/* Person quote styles */
+.person-quote {
+    font-style: italic;
+    color: #6a5acd;
+    line-height: 1.6;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    border-left: 4px solid #8a2be2;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-quote {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quote-text {
+    font-size: 1.5rem;
+    color: #8a2be2;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.quote-subtitle {
+    font-size: 1.1rem;
+    color: #9370db;
+    font-style: italic;
+}
+
+/* Background image styles */
+.background-kiss {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="50" font-size="50">💋</text></svg>');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.background-god {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="50" font-size="50">🙏</text></svg>');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Animations */
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .person-name {
+        font-size: 1.5rem;
+    }
+    
+    .quote-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .main-title {
+        font-size: 1.8rem;
+    }
+    
+    .person-card {
+        padding: 20px;
+    }
+}
