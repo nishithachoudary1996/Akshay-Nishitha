@@ -1,0 +1,161 @@
+# Akshay & Nishitha Love Story Website 💕
+
+A beautiful, interactive website celebrating the love story of Akshay and Nishitha.
+
+## Features ✨
+
+- **Beautiful Purple/Lavender Theme** - Romantic gradient background with glass-morphism effects
+- **Divided Layout** - Left side for Akshay, right side for Nishitha
+- **Interactive Buttons**:
+  - 💋 **Kiss Button** - Changes background to kiss image with floating hearts animation
+  - 🙏 **God Button** - Changes background to god blessing with sparkle effects
+- **Responsive Design** - Works perfectly on all devices
+- **Animated Elements** - Floating hearts, sparkles, and smooth transitions
+- **Love Quotes** - Beautiful romantic quotes for both individuals
+- **Special Message** - Bottom quote about long-distance love and future meetings
+
+## How to Use 🚀
+
+1. **Open the Website**: Double-click on `index.html` to open in your web browser
+2. **Explore the Sections**: 
+   - Top: Beautiful header with animated hearts
+   - Left: Akshay's section with avatar and buttons
+   - Right: Nishitha's section with avatar and buttons
+   - Bottom: Inspirational quote about your love journey
+
+3. **Try the Interactive Features**:
+   - Click the **Kiss Button** 💋 to see floating hearts and background change
+   - Click the **God Button** 🙏 to see sparkles and blessing effects
+   - Watch the beautiful animations and effects
+
+## File Structure 📁
+
+```
+Akshay-Nishitha-Love-Story/
+├── index.html          # Main HTML file
+├── styles.css          # Beautiful CSS styling
+├── script.js           # Interactive JavaScript functionality
+├── .gitignore          # Git ignore file
+└── README.md           # This file
+```
+
+## GitHub Collaboration Setup 🐙
+
+### Prerequisites
+- Git installed on your system
+- GitHub account
+
+### Initial Setup (After Git Installation)
+```bash
+# Navigate to the project folder
+cd "Akshay-Nishitha-Love-Story"
+
+# Initialize Git repository
+git init
+
+# Add all files to Git
+git add .
+
+# Make initial commit
+git commit -m "Initial commit: Akshay & Nishitha Love Story Website"
+
+# Add GitHub remote (replace with your repository URL)
+git remote add origin https://github.com/YOUR_USERNAME/Akshay-Nishitha-Love-Story.git
+
+# Push to GitHub
+git branch -M main
+git push -u origin main
+```
+
+### Daily Collaboration Workflow
+```bash
+# Check status of changes
+git status
+
+# Add your changes
+git add .
+
+# Commit your changes
+git commit -m "Description of your changes"
+
+# Push to GitHub
+git push
+
+# Pull latest changes from collaborators
+git pull origin main
+```
+
+### For Collaborators
+```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/Akshay-Nishitha-Love-Story.git
+
+# Navigate to project folder
+cd Akshay-Nishitha-Love-Story
+
+# Pull latest changes
+git pull origin main
+```
+
+## Technical Details 🔧
+
+- **HTML5** - Modern semantic structure
+- **CSS3** - Advanced styling with gradients, animations, and glass-morphism
+- **JavaScript ES6+** - Interactive functionality and dynamic effects
+- **Responsive Design** - Mobile-friendly layout
+- **Cross-browser Compatible** - Works on all modern browsers
+- **Git Version Control** - Easy collaboration and version management
+
+## Customization Options 🎨
+
+You can easily customize:
+- Colors and themes
+- Text content and quotes
+- Button styles and effects
+- Animation timings
+- Background images (replace emoji placeholders with actual images)
+
+## Browser Support 🌐
+
+- Chrome ✅
+- Firefox ✅
+- Safari ✅
+- Edge ✅
+- Mobile browsers ✅
+
+## Getting Started 🎯
+
+1. **Install Git** (if not already installed)
+2. **Navigate to the project folder**
+3. **Follow the GitHub setup instructions above**
+4. **Open `index.html` in your browser to view the website**
+5. **Start collaborating!** 💖
+
+## Collaboration Tips 💡
+
+- **Commit frequently** with descriptive messages
+- **Pull before pushing** to avoid conflicts
+- **Use meaningful commit messages** like "Add new love quote" or "Fix button animation"
+- **Test changes** before committing
+- **Communicate** with your team about major changes
+
+---
+
+**Made with ❤️ for Akshay & Nishitha's Eternal Love Story**
+
+*"Long distance we are going to meet soon with all success"* ✨
+
+---
+
+## 🚀 Ready for GitHub!
+
+Your project is now set up with:
+- ✅ All website files
+- ✅ `.gitignore` file
+- ✅ Comprehensive README
+- ✅ Git collaboration instructions
+
+**Next Steps:**
+1. Restart your system (to activate Git)
+2. Follow the GitHub setup instructions above
+3. Start collaborating on your beautiful love story website! 💕
